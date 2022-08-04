@@ -1,0 +1,25 @@
+import { AppBar, Box, Container, Toolbar, Typography } from "@material-ui/core";
+import React from "react";
+import HorizontalStepper from "./HorizontalStepper";
+import "./ScoreBoard.css";
+
+const StepperContainer = () => {
+  return (
+    <div>
+      <AppBar position="fixed">
+        <Toolbar>
+          <Typography className="multi-step" variant="h6">
+            Team Selection
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Container>
+        <Box marginTop={10}>
+          <HorizontalStepper />
+        </Box>
+      </Container>
+    </div>
+  );
+};
+
+export default StepperContainer;
